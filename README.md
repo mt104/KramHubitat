@@ -5,5 +5,5 @@ Whilst I'd love to hear from you if you find any of these useful, or have sugges
 
 Mark Turner mark@kram.org
 
-**Uptime Robot** - Polls your [Uptime Robot](https://uptimerobot.com) account, creating and updating the status of a virtual contact sensor chid device for each of your monitors. Closed means up. Open means down.
+**Uptime Robot** - Polls your [Uptime Robot](https://uptimerobot.com) account, creating and updating the status of a virtual contact sensor child device for each of your monitors. Closed means up. Open means down.
 
