@@ -2,7 +2,7 @@ metadata {
     definition (
     name: "Uptime Robot",
     namespace: "org.kram",
-    author: "Mark Turner" )
+    author: "Mark Turner <mark@kram.org>" )
     {
         capability "Refresh"
     }
