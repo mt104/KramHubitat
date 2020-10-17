@@ -1,5 +1,7 @@
 // My first attempt at using Grovy to write a driver for Hubitat. Parts of this were shamelessly borrowed from other drivers. Thank-you to those authors, and sorry I forgot to make a note of where each idea came from!
 
+// v1.0 - Added version number and removed option to not show all preferences as there are only a few.
+
 metadata {
     definition (
     name: "Uptime Robot",
@@ -10,13 +12,8 @@ metadata {
     }
     preferences{
 		section{
-			if( ShowAllPreferences || ShowAllPreferences == null ){
-                input( type: "string", name: "APIKey", title: "<b>API key (ideally the read-only one)</b>", required: true )
-                input( type: "enum", name: "LogType", title: "<b>Enable Logging?</b>", required: false, defaultValue: "2", multiple: false, options: [ [ "1" : "None" ], [ "2" : "Info" ], [ "3" : "Debug" ], [ "4" : "Trace" ] ] )
-				input( type: "bool", name: "ShowAllPreferences", title: "<b>Show All Preferences?</b>", required: false, defaultValue: true )
-			} else {
-				input( type: "bool", name: "ShowAllPreferences", title: "<b>Show All Preferences?</b>", required: false, defaultValue: true )
-			}
+            input( type: "string", name: "APIKey", title: "<b>API key (ideally the read-only one)</b>", required: true )
+            input( type: "enum", name: "LogType", title: "<b>Enable Logging?</b>", required: false, defaultValue: "2", multiple: false, options: [ [ "1" : "None" ], [ "2" : "Info" ], [ "3" : "Debug" ], [ "4" : "Trace" ] ] )
 		}
 	}
 
