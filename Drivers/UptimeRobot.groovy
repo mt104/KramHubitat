@@ -1,3 +1,5 @@
+// My first attempt at using Grovy to write a driver for Hubitat. Parts of this were shamelessly borrowed from other drivers. Thank-you to those authors, and sorry I forgot to make a note of where each idea came from!
+
 metadata {
     definition (
     name: "Uptime Robot",
@@ -27,8 +29,6 @@ def refresh() {
 }
 
 private sendSyncCmd(){
-    // def uri = "https://api.uptimerobot.com/v2/getMonitors?format=json"
-    
     def Params = [
         uri: "https://api.uptimerobot.com/v2/getMonitors?format=json",
         requestContentType: 'application/json',
